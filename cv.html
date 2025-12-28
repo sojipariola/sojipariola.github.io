@@ -1,21 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Olusoji Omopariola — Healthcare Technology Executive & Software Engineer</title>
-  <meta name="description" content="Curriculum Vitae of Dr. Olusoji Omopariola — Bridging 20+ years of clinical expertise with modern software engineering and data systems.">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
+  <!-- ==================== SEO META TAGS ==================== -->
+  <title>Dr. Olusoji Omopariola | Healthcare Technology Executive & Software Engineer</title>
+  <meta name="description" content="Dr. Olusoji Omopariola: Dental Surgeon turned Software Engineer with 20+ years experience. Building secure, scalable healthcare technology solutions and data systems.">
+  <meta name="keywords" content="healthcare technology, software engineering, data systems, cloud engineering, dental surgeon, data engineering, Nigeria, healthcare software, EMR systems, HIPAA compliance">
+  <meta name="author" content="Dr. Olusoji Omopariola">
+  
+  <!-- GOOGLE SEARCH CONSOLE VERIFICATION -->
+  <meta name="google-site-verification" content="421d5e7d96244ebd" />
+  <meta name="msvalidate.01" content="E93D358B5315D4B094F364E160637D0A" />
+  
+  <!-- Robots & Crawlers -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://sojipariola.github.io">
+  
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Dr. Olusoji Omopariola | Healthcare Technology Executive">
+  <meta property="og:description" content="Bridging 20+ years of clinical expertise with modern software engineering to transform healthcare delivery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sojipariola.github.io">
+  <meta property="og:image" content="https://sojipariola.github.io/images/profile.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Dr. Olusoji Omopariola">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr. Olusoji Omopariola | Healthcare Technology Executive">
+  <meta name="twitter:description" content="Dental Surgeon turned Software Engineer building healthcare technology solutions.">
+  <meta name="twitter:image" content="https://sojipariola.github.io/images/profile.webp">
+  <meta name="twitter:site" content="@sojipariola">
+  <meta name="twitter:creator" content="@sojipariola">
+  
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- ==================== STYLES ==================== -->
   <style>
     :root {
       --primary: #0f172a;
       --primary-light: #1e293b;
       --accent: #2563eb;
       --accent-light: #3b82f6;
+      --accent-dark: #1d4ed8;
       --accent-gradient: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
       --secondary: #10b981;
+      --secondary-light: #34d399;
       --bg: #f8fafc;
       --card: #ffffff;
       --text: #1e293b;
@@ -24,16 +72,21 @@
       --radius: 16px;
       --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
       --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.1);
+      --shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.15);
       --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --glass: rgba(255, 255, 255, 0.1);
+      --glass-border: rgba(255, 255, 255, 0.2);
     }
 
-    body.dark-mode {
+    .dark-mode {
       --primary: #f8fafc;
       --primary-light: #e2e8f0;
       --accent: #60a5fa;
       --accent-light: #93c5fd;
+      --accent-dark: #3b82f6;
       --accent-gradient: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
       --secondary: #34d399;
+      --secondary-light: #6ee7b7;
       --bg: #0f172a;
       --card: #1e293b;
       --text: #f1f5f9;
@@ -41,16 +94,20 @@
       --border: #334155;
       --shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.3);
+      --shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.4);
+      --glass: rgba(30, 41, 59, 0.3);
+      --glass-border: rgba(255, 255, 255, 0.1);
     }
 
-    * { 
-      box-sizing: border-box; 
-      margin: 0; 
-      padding: 0; 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 80px;
     }
 
     body {
@@ -59,25 +116,74 @@
       color: var(--text);
       line-height: 1.7;
       transition: var(--transition);
-      min-height: 100vh;
+      overflow-x: hidden;
     }
 
     h1, h2, h3, h4 {
       font-family: 'Playfair Display', serif;
       font-weight: 700;
-      color: var(--primary);
       line-height: 1.3;
+      color: var(--primary);
     }
 
-    a { 
-      color: var(--accent); 
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--accent);
       text-decoration: none;
       transition: var(--transition);
-      position: relative;
     }
 
-    a:hover { 
+    a:hover {
       color: var(--accent-light);
+    }
+
+    /* ==================== UTILITIES ==================== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section {
+      padding: 6rem 0;
+    }
+
+    .section:nth-child(even) {
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.02) 0%, transparent 100%);
+    }
+
+    .dark-mode .section:nth-child(even) {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
+    }
+
+    .section-title {
+      font-size: 2.75rem;
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -12px;
+      width: 80px;
+      height: 5px;
+      background: var(--accent-gradient);
+      border-radius: 3px;
+    }
+
+    .section-subtitle {
+      font-size: 1.25rem;
+      color: var(--muted);
+      margin-bottom: 3rem;
+      max-width: 700px;
     }
 
     .text-gradient {
@@ -87,194 +193,388 @@
       background-clip: text;
     }
 
-    /* HEADER */
-    header {
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--secondary);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    .highlight {
+      background: linear-gradient(120deg, rgba(37, 99, 235, 0.15) 0%, rgba(37, 99, 235, 0) 100%);
+      padding: 0.25rem 0.75rem;
+      border-radius: 6px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    /* ==================== NAVIGATION ==================== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+      transition: var(--transition);
+      padding: 1rem 0;
+    }
+
+    .dark-mode nav {
+      background: rgba(15, 23, 42, 0.95);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: var(--transition);
+    }
+
+    .logo:hover {
+      transform: translateY(-2px);
+    }
+
+    .logo-icon {
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 1.75rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      color: var(--text);
+      position: relative;
+      padding: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    .nav-links a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 3px;
+      background: var(--accent-gradient);
+      border-radius: 3px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::before,
+    .nav-links a.active::before {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .theme-toggle, .mobile-menu-btn {
+      background: none;
+      border: none;
+      color: var(--text);
+      font-size: 1.25rem;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 50%;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+    }
+
+    .theme-toggle:hover, .mobile-menu-btn:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    .dark-mode .theme-toggle:hover,
+    .dark-mode .mobile-menu-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      font-size: 1.5rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.75rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-primary {
+      background: var(--accent-gradient);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+    }
+
+    /* ==================== HERO SECTION ==================== */
+    .hero {
       background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
-      color: #fff;
-      padding: 3rem 1.5rem 2.5rem;
+      color: white;
+      padding: 10rem 1.5rem 6rem;
       text-align: center;
       position: relative;
       overflow: hidden;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    header::before {
+    .hero::before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background: radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.15) 0%, transparent 50%);
+      background: radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.2) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.15) 0%, transparent 50%);
     }
 
-    .header-content {
+    .hero-content {
       position: relative;
       z-index: 2;
-      max-width: 1200px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
-    header h1 {
-      font-size: 3rem;
-      color: #fff;
-      margin-bottom: 0.5rem;
-      line-height: 1.1;
-    }
-
-    header .subtitle {
-      font-size: 1.5rem;
-      color: #c7d2fe;
-      margin-bottom: 1.5rem;
-      font-weight: 300;
-    }
-
-    .header-actions { 
-      margin-top: 2rem; 
-      display: flex; 
-      justify-content: center; 
-      gap: 1rem; 
-      flex-wrap: wrap; 
-    }
-
-    .btn { 
-      padding: 0.75rem 1.75rem; 
-      border-radius: 50px; 
-      border: 2px solid transparent; 
-      font-weight: 600; 
-      cursor: pointer; 
-      transition: var(--transition);
+    .hero-badge {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      font-size: 0.95rem;
-    }
-
-    .btn-primary { 
-      background: var(--accent-gradient);
-      color: #fff; 
-      box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
-    }
-
-    .btn-primary:hover { 
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
-    }
-
-    .btn-outline { 
-      background: transparent; 
-      color: #fff; 
-      border-color: #c7d2fe; 
-    }
-
-    .btn-outline:hover { 
-      background: rgba(255,255,255,0.1);
-      transform: translateY(-3px);
-    }
-
-    .badge {
-      display: inline-block;
-      background: rgba(16, 185, 129, 0.2);
-      color: var(--secondary);
-      padding: 0.25rem 0.75rem;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 0.75rem 1.5rem;
       border-radius: 50px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-left: 0.5rem;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    /* MAIN LAYOUT */
-    main {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 2.5rem;
-      padding: 3rem 1.5rem;
+    .hero h1 {
+      font-size: 4rem;
+      color: white;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
     }
 
-    /* SIDE PANEL */
-    .side-panel {
+    .hero .subtitle {
+      font-size: 1.75rem;
+      color: #c7d2fe;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+
+    .hero-description {
+      font-size: 1.25rem;
+      color: #e2e8f0;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
       display: flex;
-      flex-direction: column;
-      gap: 2rem;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
     }
 
-    .card {
+    .hero-actions .btn-primary {
+      background: white;
+      color: #2563eb;
+      font-weight: 700;
+    }
+
+    .hero-actions .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .hero-actions .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .experience-badge {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--accent-gradient);
+      color: white;
+      padding: 1.5rem 2rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      margin-top: 2rem;
+    }
+
+    .experience-badge .number {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .experience-badge .text {
+      font-size: 1rem;
+      font-weight: 600;
+      opacity: 0.9;
+    }
+
+    /* ==================== ABOUT SECTION ==================== */
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .profile-img-container {
+      position: relative;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-xl);
+      border: 5px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  var(--accent-gradient) border-box;
+      transition: var(--transition);
+    }
+
+    .profile-img:hover {
+      transform: scale(1.02) rotate(1deg);
+    }
+
+    .profile-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: var(--accent-gradient);
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      font-weight: 600;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 1.5rem;
       background: var(--card);
-      padding: 2rem;
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       border: 1px solid var(--border);
       transition: var(--transition);
     }
 
-    .card:hover {
+    .stat-item:hover {
       transform: translateY(-5px);
       box-shadow: var(--shadow-lg);
     }
 
-    .card h3 { 
-      margin-bottom: 1rem; 
-      color: var(--accent); 
-      font-size: 1.3rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .card h3 i {
-      font-size: 1.1rem;
-    }
-
-    .card ul { 
-      list-style: none; 
-    }
-
-    .card li { 
-      margin-bottom: 0.75rem; 
-      font-size: 0.95rem;
-      display: flex;
-      align-items: flex-start;
-      gap: 0.5rem;
-    }
-
-    .card li:before {
-      content: '•';
-      color: var(--accent);
-      font-weight: bold;
-      flex-shrink: 0;
-    }
-
-    /* PROFILE CARD */
-    .profile-card {
-      text-align: center;
-      position: relative;
-    }
-
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid var(--accent);
-      margin: 0 auto 1.5rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    .profile-name {
-      font-size: 1.5rem;
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
       margin-bottom: 0.5rem;
     }
 
-    .profile-title {
-      color: var(--muted);
+    .stat-label {
       font-size: 0.95rem;
-      margin-bottom: 1rem;
+      color: var(--muted);
+      font-weight: 600;
     }
 
-    /* SKILLS */
+    /* ==================== SKILLS SECTION ==================== */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-category {
+      margin-bottom: 2.5rem;
+    }
+
+    .skill-category h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
     .skill-item {
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
     }
 
     .skill-header {
@@ -282,684 +582,1353 @@
       justify-content: space-between;
       margin-bottom: 0.5rem;
       font-weight: 600;
-      font-size: 0.95rem;
     }
 
-    .skill-bar { 
-      background: var(--border); 
-      border-radius: 10px; 
-      overflow: hidden; 
-      height: 10px; 
-    }
-
-    .skill-level { 
-      height: 100%; 
-      background: var(--accent-gradient);
-      border-radius: 10px;
-      width: 0;
-      transition: width 1.5s ease-out;
-    }
-
-    /* MAIN CONTENT */
-    .main-content { 
-      display: flex; 
-      flex-direction: column; 
-      gap: 2.5rem; 
-    }
-
-    section h2 { 
-      font-size: 2rem; 
-      margin-bottom: 1.5rem; 
-      position: relative;
-      display: inline-block;
-    }
-
-    section h2::after { 
-      content: ''; 
-      display: block; 
-      width: 60px; 
-      height: 5px; 
-      background: var(--accent-gradient);
-      margin-top: 0.5rem; 
-      border-radius: 3px;
-    }
-
-    /* TIMELINE */
-    .timeline { 
-      display: flex; 
-      flex-direction: column; 
-      gap: 2rem; 
-      position: relative;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 15px;
-      top: 0;
-      bottom: 0;
-      width: 3px;
+    .skill-bar {
+      height: 10px;
       background: var(--border);
-      border-radius: 3px;
+      border-radius: 5px;
+      overflow: hidden;
     }
 
-    .role {
-      position: relative;
-      padding-left: 3rem;
-    }
-
-    .role::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 5px;
-      width: 30px;
-      height: 30px;
+    .skill-progress {
+      height: 100%;
       background: var(--accent-gradient);
-      border-radius: 50%;
-      border: 5px solid var(--card);
-      box-shadow: 0 0 0 3px var(--accent);
+      border-radius: 5px;
+      width: 0;
+      transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .role h3 { 
-      font-size: 1.3rem; 
-      margin-bottom: 0.3rem; 
-    }
-
-    .role .meta { 
+    .tech-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 0.75rem;
-      font-size: 0.9rem; 
-      color: var(--muted);
+      gap: 0.75rem;
+      margin-top: 3rem;
     }
 
-    .role .company {
+    .tech-tag {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      font-size: 0.95rem;
       font-weight: 600;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tech-tag:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+      border-color: var(--accent);
       color: var(--accent);
     }
 
-    .role ul { 
-      padding-left: 1.2rem; 
-      margin-top: 0.5rem; 
-    }
-
-    .role li {
-      margin-bottom: 0.5rem;
-      position: relative;
-    }
-
-    .role li::before {
-      content: '▸';
-      position: absolute;
-      left: -1rem;
-      color: var(--accent);
-    }
-
-    /* PROJECTS */
+    /* ==================== PROJECTS SECTION ==================== */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2.5rem;
     }
 
     .project-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      border: 1px solid var(--border);
       height: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
-    .project-card h4 {
-      font-size: 1.2rem;
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--accent);
+    }
+
+    .project-image-container {
+      height: 220px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .project-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .project-card:hover .project-image {
+      transform: scale(1.05);
+    }
+
+    .project-content {
+      padding: 2rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
       margin-bottom: 0.5rem;
+    }
+
+    .project-meta {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      flex-grow: 1;
     }
 
     .project-tech {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
-      margin-top: 1rem;
+      margin-bottom: 1.5rem;
     }
 
-    .tech-tag {
+    .tech-badge {
       background: rgba(37, 99, 235, 0.1);
       color: var(--accent);
-      padding: 0.25rem 0.75rem;
+      padding: 0.35rem 0.85rem;
       border-radius: 50px;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       font-weight: 600;
     }
 
-    /* FOOTER */
-    footer { 
-      text-align: center; 
-      padding: 3rem 1.5rem 2rem; 
-      color: var(--muted);
-      border-top: 1px solid var(--border);
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: auto;
+    }
+
+    .project-link:hover {
+      gap: 0.75rem;
+    }
+
+    /* ==================== CONTACT SECTION ==================== */
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      padding: 1.5rem;
       background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .contact-item:hover {
+      transform: translateX(10px);
+      border-color: var(--accent);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--accent-gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .contact-details h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-form {
+      background: var(--card);
+      padding: 3rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 1rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 1rem;
+      transition: var(--transition);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-submit {
+      background: var(--accent-gradient);
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .form-submit:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+    }
+
+    /* ==================== FOOTER ==================== */
+    footer {
+      background: var(--primary);
+      color: white;
+      padding: 4rem 0 2rem;
     }
 
     .footer-content {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 0 1.5rem;
     }
 
-    .social-links {
+    .footer-main {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand {
+      max-width: 400px;
+    }
+
+    .footer-logo {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
       display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin: 2rem 0;
+      align-items: center;
+      gap: 0.75rem;
     }
 
-    .social-link {
+    .footer-about {
+      color: #94a3b8;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-links h4,
+    .footer-social h4 {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: #94a3b8;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-light);
+      padding-left: 5px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-icon {
       width: 45px;
       height: 45px;
-      background: var(--bg);
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--text);
-      font-size: 1.2rem;
+      color: #94a3b8;
+      font-size: 1.25rem;
       transition: var(--transition);
-      border: 1px solid var(--border);
     }
 
-    .social-link:hover {
-      background: var(--accent);
+    .social-icon:hover {
+      background: var(--accent-gradient);
       color: white;
-      transform: translateY(-3px);
+      transform: translateY(-5px);
     }
 
-    /* PRINT STYLES */
-    @media print {
-      .header-actions,
-      .social-links,
-      .btn {
-        display: none !important;
-      }
-      
-      body {
-        font-size: 12pt;
-        background: white;
-        color: black;
-      }
-      
-      .card {
-        box-shadow: none;
-        border: 1px solid #ddd;
-        break-inside: avoid;
-      }
-      
-      header {
-        background: #0f172a !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-      
-      main {
-        grid-template-columns: 1fr 2fr;
-        gap: 1.5rem;
-      }
-      
-      .skill-level {
-        background: #2563eb !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 2rem;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.9rem;
     }
 
-    /* RESPONSIVE */
+    /* ==================== BACK TO TOP ==================== */
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--accent-gradient);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 999;
+      border: none;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-5px) scale(1.1);
+    }
+
+    /* ==================== RESPONSIVE ==================== */
     @media (max-width: 1024px) {
-      main { 
-        grid-template-columns: 1fr; 
-        gap: 2rem;
+      .hero h1 {
+        font-size: 3rem;
       }
       
-      .side-panel {
-        order: 2;
+      .about-content,
+      .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
       }
       
-      .main-content {
-        order: 1;
+      .footer-main {
+        grid-template-columns: 1fr;
+        gap: 3rem;
       }
       
-      header h1 {
+      .section-title {
         font-size: 2.5rem;
       }
     }
 
     @media (max-width: 768px) {
-      header {
-        padding: 2.5rem 1rem 2rem;
+      .mobile-menu-btn {
+        display: flex;
       }
-      
-      header h1 {
-        font-size: 2rem;
+
+      .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--card);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        box-shadow: var(--shadow-xl);
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: var(--transition);
+        pointer-events: none;
+        z-index: 999;
       }
-      
-      header .subtitle {
-        font-size: 1.2rem;
+
+      .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
       }
-      
-      .header-actions {
+
+      .hero {
+        padding: 8rem 1rem 4rem;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero .subtitle {
+        font-size: 1.5rem;
+      }
+
+      .hero-description {
+        font-size: 1.1rem;
+      }
+
+      .hero-actions {
         flex-direction: column;
         align-items: center;
       }
-      
+
       .btn {
         width: 100%;
         max-width: 300px;
         justify-content: center;
       }
-      
-      main {
-        padding: 2rem 1rem;
-      }
-      
-      section h2 {
-        font-size: 1.7rem;
-      }
-      
+
       .projects-grid {
         grid-template-columns: 1fr;
       }
-      
-      .role::before {
-        width: 25px;
-        height: 25px;
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-form {
+        padding: 2rem;
+      }
+
+      .section {
+        padding: 4rem 0;
       }
     }
 
     @media (max-width: 480px) {
-      .card {
-        padding: 1.5rem;
+      .hero h1 {
+        font-size: 2rem;
       }
-      
-      .profile-img {
-        width: 120px;
-        height: 120px;
+
+      .hero .subtitle {
+        font-size: 1.2rem;
       }
-      
-      .role {
-        padding-left: 2.5rem;
+
+      .section-title {
+        font-size: 2rem;
       }
-      
-      .timeline::before {
-        left: 12px;
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-container {
+        grid-template-columns: 1fr;
+      }
+
+      .tech-tags {
+        justify-content: center;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
       }
     }
 
-    /* ANIMATIONS */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    /* ==================== ANIMATIONS ==================== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .fade-in {
-      animation: fadeIn 0.6s ease-out forwards;
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
+
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="header-content">
-    <h1>Dr. Olusoji Omopariola</h1>
-    <p class="subtitle">Healthcare Technology Executive & Software Engineer</p>
-    <p style="color: #c7d2fe; max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
-      Bridging <span class="badge">20+ years</span> of clinical expertise with modern software engineering to transform healthcare delivery
-    </p>
-    
-    <div class="header-actions">
-      <a href="index.html" class="btn btn-outline">
-        <i class="fas fa-arrow-left"></i> Back to Portfolio
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">⚕️💻</span>
+        <span>Dr. Olusoji Omopariola</span>
       </a>
-      <a href="cv.pdf" download class="btn btn-primary">
-        <i class="fas fa-download"></i> Download PDF CV
-      </a>
-      <button onclick="toggleDarkMode()" class="btn btn-outline">
-        <i class="fas fa-moon"></i> Toggle Theme
-      </button>
-      <button onclick="window.print()" class="btn btn-outline">
-        <i class="fas fa-print"></i> Print CV
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cv.html" class="btn btn-primary">View CV</a></li>
+        <li class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
       </button>
     </div>
-  </div>
-</header>
+  </nav>
 
-<main>
-  <!-- SIDE PANEL -->
-  <div class="side-panel">
-    <div class="card profile-card fade-in">
-      <img src="images/profile.jpeg" alt="Dr. Olusoji Omopariola" class="profile-img">
-      <span class="badge">20+ years</span>
-      <div class="profile-name">Dr. Olusoji Omopariola</div>
-      <div class="profile-title">Healthcare Technology Specialist</div>
-      <p style="font-size: 0.9rem; color: var(--muted);">
-        Dental Surgeon turned Software Engineer specializing in secure, scalable healthcare solutions
+  <!-- ==================== HERO SECTION ==================== -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-badge fade-in">
+        <i class="fas fa-stethoscope"></i>
+        <span>Healthcare Meets Technology</span>
+      </div>
+      
+      <h1 class="fade-in">Dr. Olusoji <span class="text-gradient">Omopariola</span></h1>
+      <p class="subtitle fade-in delay-1">
+        Healthcare Technology Executive • Software Engineer • Data Systems Architect
       </p>
-    </div>
+      <p class="hero-description fade-in delay-2">
+        With over two decades of clinical expertise, I build secure, scalable systems 
+        that transform healthcare through modern technology, data engineering, and 
+        cloud-native solutions.
+      </p>
 
-    <div class="card fade-in">
-      <h3><i class="fas fa-address-card"></i> Contact</h3>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:sojipariola@gmail.com">sojipariola@gmail.com</a></li>
-        <li><strong>Phone:</strong> +234 802 296 9603</li>
-        <li><strong>Location:</strong> Ekiti State, Nigeria (Remote Global)</li>
-        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sojipariola" target="_blank">linkedin.com/in/sojipariola</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/sojipariola" target="_blank">github.com/sojipariola</a></li>
-        <li><strong>Portfolio:</strong> <a href="index.html">olusojiomopariola.com</a></li>
-      </ul>
-    </div>
-
-    <div class="card fade-in">
-      <h3><i class="fas fa-code"></i> Technical Skills</h3>
-      <div class="skill-item">
-        <div class="skill-header">
-          <span>Python & Flask/FastAPI</span>
-          <span>95%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-level" data-width="95"></div></div>
+      <div class="hero-actions fade-in delay-3">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i>
+          <span>View Projects</span>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-paper-plane"></i>
+          <span>Contact Me</span>
+        </a>
+        <a href="cv.html" class="btn btn-secondary">
+          <i class="fas fa-file-alt"></i>
+          <span>View CV</span>
+        </a>
       </div>
       
-      <div class="skill-item">
-        <div class="skill-header">
-          <span>Data Engineering (Azure, Databricks)</span>
-          <span>90%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-level" data-width="90"></div></div>
-      </div>
-      
-      <div class="skill-item">
-        <div class="skill-header">
-          <span>JavaScript & React</span>
-          <span>85%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-level" data-width="85"></div></div>
-      </div>
-      
-      <div class="skill-item">
-        <div class="skill-header">
-          <span>Cloud & DevOps (Terraform, Docker)</span>
-          <span>85%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-level" data-width="85"></div></div>
-      </div>
-      
-      <div class="skill-item">
-        <div class="skill-header">
-          <span>Healthcare Systems & Compliance</span>
-          <span>98%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-level" data-width="98"></div></div>
+      <div class="experience-badge fade-in">
+        <div class="number">20+</div>
+        <div class="text">Years Clinical Experience</div>
       </div>
     </div>
+  </header>
 
-    <div class="card fade-in">
-      <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-      <ul>
-        <li><strong>Baptist Primary School</strong><br>Idikan, Ibadan</li>
-        <li><strong>Ibadan Boys' High School</strong><br>Oke Bola, Ibadan</li>
-        <li><strong>Obafemi Awolowo University</strong><br>BDS, Dental Surgery</li>
-        <li><strong>City & Guilds, UK</strong><br>Level 3 Diploma, Health & Social Care</li>
-        <li><strong>ALX Africa</strong><br>Software Engineering</li>
-      </ul>
-    </div>
-
-    <div class="card fade-in">
-      <h3><i class="fas fa-award"></i> Certifications</h3>
-      <ul>
-        <li>AWS Certified Solutions Architect</li>
-        <li>Databricks Data Engineering Professional</li>
-        <li>HIPAA Compliance & Security</li>
-        <li>Azure Fundamentals</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <div class="main-content">
-    <section class="fade-in">
-      <h2>Professional Profile</h2>
-      <div class="card">
-        <p style="font-size: 1.1rem;">
-          <strong>Dental Surgeon with over two decades of clinical experience</strong> who has successfully transitioned into 
-          <strong class="text-gradient">software engineering</strong> and 
-          <strong class="text-gradient">data systems architecture</strong>. 
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+    <div class="container">
+      
+      <!-- ABOUT SECTION -->
+      <section id="about" class="section">
+        <h2 class="section-title fade-in">About Me</h2>
+        <p class="section-subtitle fade-in">
+          Bridging clinical precision with technical innovation to create impactful healthcare solutions
         </p>
-        <p style="margin-top: 1rem;">
-          My unique background provides unparalleled insight into healthcare challenges, enabling me to design 
-          <strong>secure, scalable, and compliant solutions</strong> that bridge clinical workflows with modern technology. 
-          I specialize in HIPAA-compliant systems, cloud-native architecture, and data engineering pipelines that 
-          transform healthcare delivery.
-        </p>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
-          <span class="badge">20+ Years Clinical Experience</span>
-          <span class="badge">Healthcare Compliance Expert</span>
-          <span class="badge">Full-Stack Development</span>
-          <span class="badge">Cloud Data Engineering</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="fade-in">
-      <h2>Professional Experience</h2>
-      <div class="card timeline">
-        <div class="role">
-          <h3>Dental Surgeon & Clinical Lead</h3>
-          <div class="meta">
-            <span class="company">Federal Teaching Hospital, Nigeria</span>
-            <span class="duration">2000 – 2021</span>
+        
+        <div class="about-content">
+          <div class="profile-img-container fade-in">
+            <img 
+              src="images/profile.webp" 
+              alt="Dr. Olusoji Omopariola - Healthcare Technology Executive" 
+              class="profile-img"
+              loading="lazy"
+              width="400"
+              height="400"
+            >
+            <div class="profile-badge">
+              <i class="fas fa-award"></i>
+              <span>Expert in Both Fields</span>
+            </div>
           </div>
+          
+          <div class="about-text fade-in">
+            <p>
+              I am a <span class="highlight">Dental Surgeon</span> with over 20 years of clinical
+              experience, now passionately building the future of healthcare through 
+              <span class="highlight">software development</span> and
+              <span class="highlight">data engineering</span>.
+            </p>
+            <p>
+              My unique journey from the operating room to the server room gives me 
+              unparalleled insight into healthcare challenges. I understand not just 
+              the technology, but the human impact it serves.
+            </p>
+            <p>
+              I specialize in designing <span class="highlight">HIPAA-compliant, scalable systems</span>
+              that bridge clinical workflows with modern cloud technologies, focusing on 
+              security, data integrity, and user-centered design.
+            </p>
+            
+            <div class="stats-grid fade-in">
+              <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">10K+</div>
+                <div class="stat-label">Patients Served</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="section">
+        <h2 class="section-title fade-in">Technical Expertise</h2>
+        <p class="section-subtitle fade-in">
+          A comprehensive toolkit for building modern healthcare technology solutions
+        </p>
+        
+        <div class="skills-container">
+          <div class="fade-in">
+            <div class="skill-category">
+              <h3><i class="fas fa-server"></i> Backend Development</h3>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Python & Flask/FastAPI</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>REST APIs & Microservices</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-category">
+              <h3><i class="fas fa-database"></i> Data Engineering</h3>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Azure & Databricks</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>ETL Pipelines & Spark</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="fade-in">
+            <div class="skill-category">
+              <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Terraform & Infrastructure</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Docker & CI/CD</span>
+                  <span>82%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="82"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-category">
+              <h3><i class="fas fa-stethoscope"></i> Healthcare Domain</h3>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>HIPAA Compliance & Security</span>
+                  <span>98%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="98"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Clinical Workflows</span>
+                  <span>99%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="99"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tech-tags fade-in">
+          <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+          <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+          <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+          <span class="tech-tag"><i class="fab fa-aws"></i> AWS</span>
+          <span class="tech-tag"><i class="fab fa-microsoft"></i> Azure</span>
+          <span class="tech-tag"><i class="fas fa-code-branch"></i> Git</span>
+          <span class="tech-tag"><i class="fas fa-shield-alt"></i> Security</span>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="section">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <p class="section-subtitle fade-in">
+          Real-world solutions demonstrating the intersection of healthcare and technology
+        </p>
+        
+        <div class="projects-grid">
+          <article class="project-card fade-in">
+            <div class="project-image-container">
+              <img 
+                src="images/chronosphy.webp" 
+                alt="ChronoSphy Productivity Platform" 
+                class="project-image"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>ChronoSphy</h3>
+                <span class="badge">Productivity</span>
+              </div>
+              <p class="project-meta">
+                A modular productivity platform solving personal time management with 
+                integrated calendar, world clock, journaling, and intelligent task orchestration.
+                Built with scalability and user experience as primary considerations.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Flask</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Modular Architecture</span>
+                <span class="tech-badge">SQLite</span>
+              </div>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                View Project Details
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-image-container">
+              <img 
+                src="images/pipeline.webp" 
+                alt="Crypto Data Pipeline Architecture" 
+                class="project-image"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Crypto Data Pipeline</h3>
+                <span class="badge">Data Engineering</span>
+              </div>
+              <p class="project-meta">
+                An end-to-end scalable data pipeline leveraging cloud-native architecture 
+                for real-time ingestion, transformation, and analytics of cryptocurrency data.
+                Features automated monitoring and alerting systems.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Azure</span>
+                <span class="tech-badge">Databricks</span>
+                <span class="tech-badge">Delta Lake</span>
+                <span class="tech-badge">Terraform</span>
+                <span class="tech-badge">Python</span>
+              </div>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                View Case Study
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-image-container">
+              <img 
+                src="images/dental_emr.webp" 
+                alt="Healthcare EMR System" 
+                class="project-image"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Healthcare EMR System</h3>
+                <span class="badge">Healthcare</span>
+              </div>
+              <p class="project-meta">
+                A secure electronic medical records system designed specifically for dental practices,
+                featuring patient management, treatment planning, digital imaging integration,
+                and HIPAA-compliant data handling with audit trails.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">AWS</span>
+                <span class="tech-badge">HIPAA</span>
+              </div>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                View Whitepaper
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="section">
+        <h2 class="section-title fade-in">Get In Touch</h2>
+        <p class="section-subtitle fade-in">
+          Let's collaborate on transforming healthcare through technology
+        </p>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Omopariola's Lodge</p>
+                <p>1B Abare Estate, Ido-Ekiti</p>
+                <p>Ekiti State, Nigeria</p>
+                <p style="color: var(--accent); font-weight: 600;">Working globally</p>
+              </div>
+            </div>
+            
+            <div class="contact-item fade-in">
+              <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="contact-details">
+                <h4>WhatsApp</h4>
+                <p>+234 802 296 9603</p>
+                <p>+234 803 583 9065</p>
+              </div>
+            </div>
+            
+            <div class="contact-item fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <a href="mailto:sojipariola@gmail.com">sojipariola@gmail.com</a>
+                <p style="color: var(--muted); font-size: 0.9rem;">Response within 24 hours</p>
+              </div>
+            </div>
+            
+            <div class="contact-item fade-in">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-details">
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/olusoji-omopariola-281076311/" target="_blank">
+                  linkedin.com/in/sojipariola
+                </a>
+                <p style="color: var(--muted); font-size: 0.9rem;">Connect for professional opportunities</p>
+              </div>
+            </div>
+            
+            <div class="contact-item fade-in">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-details">
+                <h4>GitHub</h4>
+                <a href="https://github.com/sojipariola" target="_blank">
+                  github.com/sojipariola
+                </a>
+                <p style="color: var(--muted); font-size: 0.9rem;">Explore my open-source projects</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form fade-in" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" class="form-control" placeholder="What is this regarding?" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" class="form-control" placeholder="Tell me about your project or inquiry..." required></textarea>
+            </div>
+            
+            <button type="submit" class="form-submit">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+            
+            <div class="form-status" id="formStatus" style="display: none; margin-top: 1.5rem; padding: 1rem; border-radius: 10px;"></div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i class="fas fa-user-md"></i>
+            <span>Dr. Olusoji Omopariola</span>
+          </div>
+          <p class="footer-about">
+            Transforming healthcare through innovative technology solutions. 
+            Combining clinical expertise with modern software engineering to 
+            build secure, scalable systems that improve patient outcomes.
+          </p>
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/sojipariola" class="social-icon" aria-label="LinkedIn" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/sojipariola" class="social-icon" aria-label="GitHub" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:sojipariola@gmail.com" class="social-icon" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://twitter.com/sojipariola" class="social-icon" aria-label="Twitter" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
           <ul>
-            <li>Delivered comprehensive dental and oral healthcare services to thousands of patients</li>
-            <li>Led clinical workflows optimization, reducing patient wait times by 30%</li>
-            <li>Implemented digital patient management systems, improving record accuracy by 75%</li>
-            <li>Trained junior staff on healthcare compliance and data privacy regulations</li>
-            <li>Spearheaded technology adoption in clinical environments</li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="cv.html">Curriculum Vitae</a></li>
           </ul>
         </div>
         
-        <div class="role">
-          <h3>Software & Data Engineer (Independent)</h3>
-          <div class="meta">
-            <span class="company">Healthcare Technology Projects</span>
-            <span class="duration">2015 – Present</span>
-          </div>
-          <ul>
-            <li>Designed and developed Flask-based healthcare systems with clean, modular architecture</li>
-            <li>Built scalable ETL pipelines on Azure using Databricks and Terraform infrastructure</li>
-            <li>Integrated clinical domain logic into secure, compliant software solutions</li>
-            <li>Created data governance frameworks for healthcare analytics platforms</li>
-            <li>Consulted for healthcare organizations on digital transformation strategies</li>
-          </ul>
+        <div class="footer-social">
+          <h4>Connect With Me</h4>
+          <p style="color: #94a3b8; margin-bottom: 1rem;">
+            Interested in healthcare technology collaborations or opportunities?
+          </p>
+          <a href="#contact" class="btn btn-primary" style="display: inline-flex;">
+            <i class="fas fa-paper-plane"></i>
+            Start Conversation
+          </a>
         </div>
       </div>
-    </section>
-
-    <section class="fade-in">
-      <h2>Key Projects</h2>
-      <div class="projects-grid">
-        <div class="card project-card">
-          <h4>ChronoSphy</h4>
-          <p>A modular productivity platform integrating calendar, world clock, journaling, and intelligent task management for healthcare professionals.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Flask</span>
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Modular Architecture</span>
-            <span class="tech-tag">SQLite</span>
-          </div>
-        </div>
-        
-        <div class="card project-card">
-          <h4>Crypto Data Pipeline</h4>
-          <p>End-to-end scalable data pipeline for cryptocurrency analytics using cloud-native architecture with automated monitoring and governance.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Azure</span>
-            <span class="tech-tag">Databricks</span>
-            <span class="tech-tag">Terraform</span>
-            <span class="tech-tag">Delta Lake</span>
-          </div>
-        </div>
-        
-        <div class="card project-card">
-          <h4>Healthcare EMR System</h4>
-          <p>HIPAA-compliant electronic medical records system for dental practices with patient management and treatment planning.</p>
-          <div class="project-tech">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">AWS</span>
-          </div>
-        </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Dr. Olusoji Omopariola. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #64748b;">
+          Portfolio hosted on <a href="https://pages.github.com" target="_blank" style="color: #94a3b8;">GitHub Pages</a>
+        </p>
       </div>
-    </section>
-
-    <section class="fade-in">
-      <h2>Core Competencies</h2>
-      <div class="card">
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem;">
-          <div>
-            <h4 style="font-size: 1.1rem; margin-bottom: 0.75rem; color: var(--accent);">Healthcare Technology</h4>
-            <ul style="font-size: 0.95rem;">
-              <li>Clinical Workflow Analysis</li>
-              <li>HIPAA Compliance</li>
-              <li>EMR/EHR Systems</li>
-              <li>Telemedicine Platforms</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 style="font-size: 1.1rem; margin-bottom: 0.75rem; color: var(--accent);">Software Engineering</h4>
-            <ul style="font-size: 0.95rem;">
-              <li>Full-Stack Development</li>
-              <li>API Design & Microservices</li>
-              <li>System Architecture</li>
-              <li>Database Design</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 style="font-size: 1.1rem; margin-bottom: 0.75rem; color: var(--accent);">Data Engineering</h4>
-            <ul style="font-size: 0.95rem;">
-              <li>ETL/ELT Pipelines</li>
-              <li>Cloud Data Platforms</li>
-              <li>Data Governance</li>
-              <li>Analytics & Visualization</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</main>
-
-<footer>
-  <div class="footer-content">
-    <div class="social-links">
-      <a href="https://linkedin.com/in/sojipariola" class="social-link" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://github.com/sojipariola" class="social-link" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="mailto:sojipariola@gmail.com" class="social-link">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://twitter.com/sojipariola" class="social-link" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
     </div>
-    
-    <p>© <span id="year"></span> Dr. Olusoji Omopariola. All rights reserved.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--muted);">
-      Last updated: <span id="currentDate"></span>
-    </p>
-  </div>
-</footer>
+  </footer>
 
-<script>
-  // Set current year and date
-  document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', { 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
-  });
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
-  // Dark mode toggle
-  function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navLinks = document.getElementById('navLinks');
     
-    // Update button icon
-    const themeBtn = document.querySelector('button[onclick="toggleDarkMode()"]');
-    const icon = themeBtn.querySelector('i');
-    if (document.body.classList.contains('dark-mode')) {
-      icon.className = 'fas fa-sun';
-      themeBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const icon = mobileMenuBtn.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        const icon = mobileMenuBtn.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      });
+    });
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Check for saved theme or prefered scheme
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
+      document.body.classList.add('dark-mode');
+      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
     } else {
-      icon.className = 'fas fa-moon';
-      themeBtn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+      themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
     }
-  }
-
-  // Initialize theme
-  if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-mode');
-    const themeBtn = document.querySelector('button[onclick="toggleDarkMode()"]');
-    if (themeBtn) {
-      themeBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-    }
-  }
-
-  // Animate skill bars on scroll
-  const animateSkillBars = () => {
-    const skillBars = document.querySelectorAll('.skill-level');
-    skillBars.forEach(bar => {
-      const rect = bar.getBoundingClientRect();
-      const isVisible = (rect.top <= window.innerHeight - 100);
-      
-      if (isVisible) {
-        const width = bar.getAttribute('data-width');
-        bar.style.width = width + '%';
-      }
-    });
-  };
-
-  // Intersection Observer for fade-in animations
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in');
-      }
-    });
-  }, observerOptions);
-
-  // Observe all fade-in elements
-  document.querySelectorAll('.fade-in').forEach(element => {
-    observer.observe(element);
-  });
-
-  // Initialize animations
-  window.addEventListener('load', () => {
-    animateSkillBars();
     
-    // Add animation delay to cards
-    document.querySelectorAll('.card').forEach((card, index) => {
-      card.style.animationDelay = `${index * 0.1}s`;
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      
+      if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      } else {
+        localStorage.setItem('theme', 'light');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      }
     });
-  });
 
-  window.addEventListener('scroll', animateSkillBars);
-</script>
+    // Back to top button
+    const backToTopBtn = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+    
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 
+    // Animate skill bars on scroll
+    const skillBars = document.querySelectorAll('.skill-progress');
+    
+    const animateSkillBars = () => {
+      skillBars.forEach(bar => {
+        const width = bar.getAttribute('data-width');
+        const rect = bar.getBoundingClientRect();
+        const isVisible = (rect.top <= window.innerHeight - 100);
+        
+        if (isVisible) {
+          bar.style.width = width + '%';
+        }
+      });
+    };
+    
+    window.addEventListener('scroll', animateSkillBars);
+    window.addEventListener('load', animateSkillBars);
+
+    // Form submission with validation
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+    
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      // Get form values
+      const formData = {
+        name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        subject: document.getElementById('subject').value.trim(),
+        message: document.getElementById('message').value.trim()
+      };
+      
+      // Simple validation
+      if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+        showFormStatus('Please fill in all fields.', 'error');
+        return;
+      }
+      
+      if (!isValidEmail(formData.email)) {
+        showFormStatus('Please enter a valid email address.', 'error');
+        return;
+      }
+      
+      // Show loading state
+      const submitBtn = contactForm.querySelector('.form-submit');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      submitBtn.disabled = true;
+      
+      try {
+        // For demo purposes, simulate API call
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        
+        // Show success message
+        showFormStatus('✅ Thank you for your message! I will get back to you within 24 hours.', 'success');
+        
+        // Reset form
+        contactForm.reset();
+        
+        // Log to console (for demo)
+        console.log('Contact form submitted:', {
+          ...formData,
+          timestamp: new Date().toISOString(),
+          page: window.location.href
+        });
+        
+      } catch (error) {
+        showFormStatus('❌ Something went wrong. Please try again or email me directly at sojipariola@gmail.com', 'error');
+      } finally {
+        // Restore button state
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+    
+    function showFormStatus(message, type) {
+      formStatus.textContent = message;
+      formStatus.className = 'form-status';
+      formStatus.style.display = 'block';
+      
+      if (type === 'success') {
+        formStatus.style.background = 'rgba(16, 185, 129, 0.1)';
+        formStatus.style.color = '#10b981';
+        formStatus.style.border = '1px solid rgba(16, 185, 129, 0.2)';
+      } else {
+        formStatus.style.background = 'rgba(239, 68, 68, 0.1)';
+        formStatus.style.color = '#ef4444';
+        formStatus.style.border = '1px solid rgba(239, 68, 68, 0.2)';
+      }
+      
+      // Hide message after 5 seconds
+      setTimeout(() => {
+        formStatus.style.opacity = '0';
+        setTimeout(() => {
+          formStatus.style.display = 'none';
+          formStatus.style.opacity = '1';
+        }, 300);
+      }, 5000);
+    }
+    
+    function isValidEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
+    
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Set active nav link based on scroll position
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-links a');
+      
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (scrollY >= (sectionTop - 150)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Add typing effect to hero title
+    const heroTitle = document.querySelector('.hero h1');
+    if (heroTitle) {
+      const text = heroTitle.textContent;
+      heroTitle.textContent = '';
+      let i = 0;
+      
+      const typeWriter = () => {
+        if (i < text.length) {
+          heroTitle.textContent += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 50);
+        }
+      };
+      
+      setTimeout(typeWriter, 1000);
+    }
+  </script>
+
+  <!-- ==================== SCHEMA MARKUP FOR SEO ==================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. Olusoji Omopariola",
+    "url": "https://sojipariola.github.io",
+    "jobTitle": "Healthcare Technology Executive & Software Engineer",
+    "description": "Dental Surgeon with 20+ years experience turned Software Engineer specializing in healthcare technology and data systems",
+    "image": "https://sojipariola.github.io/images/profile.webp",
+    "sameAs": [
+      "https://linkedin.com/in/sojipariola",
+      "https://github.com/sojipariola",
+      "mailto:sojipariola@gmail.com"
+    ],
+    "knowsAbout": [
+      "Healthcare Technology",
+      "Software Engineering",
+      "Data Engineering",
+      "Cloud Architecture",
+      "HIPAA Compliance",
+      "Dental Surgery",
+      "Clinical Workflows",
+      "Python Development",
+      "Azure Cloud",
+      "React.js"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Healthcare Technology Executive",
+      "description": "Bridging clinical expertise with software engineering to build healthcare solutions"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ido-Ekiti",
+      "addressRegion": "Ekiti State",
+      "addressCountry": "NG"
+    },
+    "email": "mailto:sojipariola@gmail.com",
+    "telephone": "+234-802-296-9603"
+  }
+  </script>
 </body>
 </html>
