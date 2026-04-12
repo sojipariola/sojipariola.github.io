@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Olusoji Omopariola - Curriculum Vitae</title>
+  <title>Olusoji Omopariola - CV | Health IT Aspirant</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     * {
@@ -13,7 +13,7 @@
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f2f5;
+      background: #e2e8f0;
       padding: 2rem;
       line-height: 1.5;
     }
@@ -21,7 +21,7 @@
       max-width: 1000px;
       margin: 0 auto;
       background: white;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
       border-radius: 12px;
       overflow: hidden;
     }
@@ -32,23 +32,29 @@
       text-align: center;
     }
     .cv-header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.3rem;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
     .cv-header p {
-      font-size: 1rem;
       opacity: 0.9;
+      margin-bottom: 1rem;
     }
     .contact-bar {
       display: flex;
       justify-content: center;
       gap: 1.5rem;
       flex-wrap: wrap;
-      margin-top: 1rem;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
     }
-    .contact-bar a {
+    .contact-bar a, .contact-bar span {
       color: white;
+      text-decoration: none;
+    }
+    .portfolio-link {
+      margin-top: 1rem;
+    }
+    .portfolio-link a {
+      color: #93c5fd;
       text-decoration: none;
     }
     .cv-body {
@@ -66,20 +72,40 @@
       margin-bottom: 1rem;
       display: inline-block;
     }
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .skill-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .skill-list li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    .skill-list li:before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: #1e40af;
+    }
     .job, .education-item {
       margin-bottom: 1.2rem;
     }
-    .job-header, .edu-header {
+    .job-header {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       margin-bottom: 0.3rem;
     }
-    .job-title, .edu-title {
+    .job-title {
       font-weight: 700;
       font-size: 1.05rem;
     }
-    .company, .institution {
+    .company {
       color: #2563eb;
       font-weight: 600;
     }
@@ -87,28 +113,49 @@
       color: #64748b;
       font-size: 0.85rem;
     }
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 0.5rem;
+    .project-card {
+      background: #f0f9ff;
+      padding: 1rem;
+      border-radius: 10px;
+      border-left: 4px solid #2563eb;
     }
-    .skill-badge {
+    .badge {
+      display: inline-block;
       background: #e0e7ff;
       color: #1e40af;
-      padding: 0.3rem 0.8rem;
+      padding: 0.2rem 0.6rem;
       border-radius: 20px;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       font-weight: 600;
+      margin-right: 0.5rem;
+      margin-bottom: 0.3rem;
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #10b981;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+    }
+    .download-btn:hover {
+      background: #059669;
+      transform: translateY(-2px);
     }
     .back-link {
       display: inline-block;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       color: #2563eb;
       text-decoration: none;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       body { padding: 1rem; }
+      .two-columns { grid-template-columns: 1fr; }
       .contact-bar { flex-direction: column; gap: 0.5rem; align-items: center; }
     }
   </style>
@@ -124,41 +171,59 @@
       <span><i class="fas fa-envelope"></i> sojipariola@gmail.com</span>
       <span><i class="fab fa-linkedin"></i> <a href="#">linkedin.com/in/sojipariola</a></span>
     </div>
+    <div class="portfolio-link">
+      <i class="fas fa-globe"></i> <a href="https://sojipariola.github.io">sojipariola.github.io</a>
+    </div>
   </div>
   
   <div class="cv-body">
-    <div class="section">
-      <div class="section-title">Professional Summary</div>
-      <p>Compassionate Domiciliary Care Worker with 4+ years UK experience, former Dental Surgeon (Nigeria, 20+ years), and self-taught programmer. Seeking a Health IT internship or trainee role where clinical workflow knowledge + growing technical skills add value. Full UK driving licence and right to work.</p>
+    <!-- Download PDF button -->
+    <div style="text-align: right; margin-bottom: 1rem;">
+      <a href="Olusoji_Omopariola_CV_HealthIT.pdf" download class="download-btn">
+        <i class="fas fa-download"></i> Download PDF CV
+      </a>
     </div>
 
     <div class="section">
-      <div class="section-title">Technical Skills (Self-Taught)</div>
-      <div class="skills-grid">
-        <span class="skill-badge">Python</span>
-        <span class="skill-badge">SQL (MySQL/PostgreSQL)</span>
-        <span class="skill-badge">JavaScript</span>
-        <span class="skill-badge">HTML/CSS</span>
-        <span class="skill-badge">Flask</span>
-        <span class="skill-badge">Git & GitHub</span>
-        <span class="skill-badge">Data Entry</span>
-        <span class="skill-badge">MS Office / Google Workspace</span>
+      <div class="section-title">Professional Summary</div>
+      <p>Compassionate Domiciliary Care Worker with 4+ years UK experience, plus 20+ years as a Dental Surgeon in Nigeria. Now self-taught in <strong>Python, SQL, and Flask</strong> — actively seeking a <strong>paid Health IT internship or trainee role</strong> where clinical workflow knowledge + growing technical skills add value.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Key Skills</div>
+      <div class="two-columns">
+        <div>
+          <p style="font-weight: 600; margin-bottom: 0.5rem;">Care & Clinical</p>
+          <ul class="skill-list">
+            <li>Person-centred care, medication prompting, safeguarding (GDPR)</li>
+            <li>Moving & handling, personal care, meal preparation</li>
+            <li>Record-keeping, incident reporting, risk assessment</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-weight: 600; margin-bottom: 0.5rem;">Technical (Self-Taught)</p>
+          <ul class="skill-list">
+            <li>Python, SQL (PostgreSQL/MySQL), JavaScript, HTML/CSS</li>
+            <li>Flask web framework (built: Carer Visit Log & Reporting Tool)</li>
+            <li>Git, GitHub, VS Code, care documentation apps</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="section">
-      <div class="section-title">Work Experience</div>
+      <div class="section-title">Professional Experience</div>
       
       <div class="job">
         <div class="job-header">
           <span class="job-title">Domiciliary Care Worker</span>
           <span class="date">2021 – Present</span>
         </div>
-        <div class="company">Florence Nursing Agency / S&N Flexi Agency – Scotland</div>
-        <ul style="margin-top: 0.3rem; padding-left: 1.2rem;">
-          <li>Provide person-centred care across multiple client homes</li>
-          <li>Accurate care notes, medication prompts, and incident reporting</li>
-          <li>Use care apps for logging visits and updating client records</li>
+        <div class="company">S&N Flexi Agency / Florence Nursing – Scotland</div>
+        <ul style="padding-left: 1.2rem; margin-top: 0.3rem;">
+          <li>Provide high-quality care across multiple client homes and care settings</li>
+          <li>Maintain accurate care notes, medication logs, and safeguarding documentation</li>
+          <li>Use and help troubleshoot care apps for logging visits and reporting</li>
         </ul>
       </div>
 
@@ -168,22 +233,22 @@
           <span class="date">2022 – 2023</span>
         </div>
         <div class="company">Alves iCare – Scotland</div>
-        <ul style="margin-top: 0.3rem; padding-left: 1.2rem;">
-          <li>Coordinated rotas, supervised staff, ensured continuity of care</li>
-          <li>Maintained client records, safeguarding logs, and compliance docs</li>
-          <li>Bridged communication between families, carers, and managers</li>
+        <ul style="padding-left: 1.2rem; margin-top: 0.3rem;">
+          <li>Coordinated staff rotas, supervised team, ensured continuity of care</li>
+          <li>Maintained client records, safeguarding logs, and compliance documentation</li>
+          <li>Acted as bridge between carers, families, and healthcare professionals</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-header">
-          <span class="job-title">Dentist / Clinical Lead</span>
+          <span class="job-title">Dentist</span>
           <span class="date">2006 – 2021</span>
         </div>
-        <div class="company">Federal Teaching Hospital, Ido-Ekiti, Nigeria</div>
-        <ul style="margin-top: 0.3rem; padding-left: 1.2rem;">
-          <li>Clinical diagnosis, treatment planning, and patient records management</li>
-          <li>Multidisciplinary teamwork and health education</li>
+        <div class="company">Federal Teaching Hospital, Ido-Ekiti – Nigeria</div>
+        <ul style="padding-left: 1.2rem; margin-top: 0.3rem;">
+          <li>Provided clinical care, patient education, and multidisciplinary teamwork</li>
+          <li>Developed strong documentation, observation, and decision-making skills</li>
         </ul>
       </div>
     </div>
@@ -192,7 +257,7 @@
       <div class="section-title">Education & Certifications</div>
       <div class="job">
         <div class="job-header">
-          <span class="job-title">Level 3 Diploma in Health and Social Care (Adults)</span>
+          <span class="job-title">Level 3 Diploma in Health & Social Care (Adults)</span>
           <span class="date">Completed</span>
         </div>
         <div class="company">City & Guilds / Rock Training Institute, London</div>
@@ -204,27 +269,39 @@
         </div>
         <div class="company">Obafemi Awolowo University, Nigeria</div>
       </div>
-      <div class="skills-grid" style="margin-top: 1rem;">
-        <span class="skill-badge">Care Certificate</span>
-        <span class="skill-badge">First Aid & CPR</span>
-        <span class="skill-badge">Manual Handling</span>
-        <span class="skill-badge">Safeguarding Adults</span>
-        <span class="skill-badge">Food Hygiene</span>
+      <div style="margin-top: 1rem;">
+        <span class="badge">Care Certificate</span>
+        <span class="badge">First Aid & CPR</span>
+        <span class="badge">Manual Handling</span>
+        <span class="badge">Safeguarding Adults</span>
+        <span class="badge">Food Hygiene & Safety</span>
       </div>
     </div>
 
     <div class="section">
-      <div class="section-title">Portfolio Project (in development)</div>
-      <p><strong>Carer Visit Log & Reporting Tool</strong> – Python/Flask/SQLite web app for logging client visits, medication, and generating reports. Demonstrates understanding of care workflows + coding skills.</p>
+      <div class="section-title">Portfolio Project</div>
+      <div class="project-card">
+        <strong>📋 Carer Visit Log & Reporting Tool</strong><br>
+        A fully functional web application for domiciliary care workers to log client visits, record medications, and generate PDF reports. Built with Python, Flask, SQLite, and ReportLab.
+        <div style="margin-top: 0.5rem;">
+          <span class="badge">Python</span>
+          <span class="badge">Flask</span>
+          <span class="badge">SQLite</span>
+          <span class="badge">ReportLab</span>
+        </div>
+        <div style="margin-top: 0.8rem;">
+          <a href="https://github.com/sojipariola/carer-visit-log" target="_blank" style="color: #2563eb;">🔗 GitHub Repository</a>
+        </div>
+      </div>
     </div>
 
     <div class="section">
-      <div class="section-title">Additional Info</div>
+      <div class="section-title">Additional Information</div>
       <ul style="padding-left: 1.2rem;">
         <li>✅ Full UK driving licence</li>
         <li>✅ Right to work in the UK (no sponsorship needed)</li>
-        <li>✅ Tech-savvy: quick learner of new software/care apps</li>
-        <li>✅ Available for internships, trainee roles, or entry-level Health IT positions</li>
+        <li>✅ Willing to work flexible hours, including weekends</li>
+        <li>✅ Tech-savvy: quick learner of new software and care systems</li>
       </ul>
     </div>
 
